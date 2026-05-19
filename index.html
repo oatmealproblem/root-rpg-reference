@@ -1,0 +1,2113 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="light dark" />
+		<title>Root RPG Reference</title>
+		<meta
+			name="description"
+			content="Reference for the Root RPG moves, feats, tags, natures, drives, and connections"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+		/>
+
+		<style>
+			em {
+				font-weight: bold;
+			}
+
+			summary {
+				/* display: flex; */
+
+				strong {
+					font-size: 1.125rem;
+				}
+			}
+
+			.grow {
+				flex-grow: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="top" class="container">
+			<h1>Root RPG Reference</h1>
+			<ul id="toc">
+				<li><a href="#basic-moves">Basic Moves</a></li>
+				<li>
+					<a href="#weapon-moves">Weapon Moves</a>
+					<ul style="margin-bottom: 0">
+						<li><a href="#basic-weapon-moves">Basic</a></li>
+						<li><a href="#special-weapon-moves">Special</a></li>
+					</ul>
+				</li>
+				<li><a href="#reputation-moves">Reputation Moves</a></li>
+				<li><a href="#travel-moves">Travel Moves</a></li>
+				<li><a href="#session-moves">Session Moves</a></li>
+				<li><a href="#ruin-moves">Ruin Moves</a></li>
+				<li><a href="#natures">Natures</a></li>
+				<li><a href="#drives">Drives</a></li>
+				<li><a href="#connections">Connections</a></li>
+				<li><a href="#gm-reference">GM Reference</a></li>
+			</ul>
+		</header>
+
+		<main class="container">
+			<section hidden id="pins"></section>
+
+			<!-- basic moves -->
+			<section>
+				<h2 id="basic-moves">Basic Moves</h2>
+				<details data-pin="move-attempt-roguish-feat">
+					<summary><input type="checkbox" /><strong>Attempt a Roguish Feat</strong></summary>
+					<p>
+						When you <em>attempt a roguish feat you are skilled in</em>, say your goal and roll with
+						Finesse. On a hit, you achieve your goal. On a 7&ndash;9, mark exhaustion or one risk of
+						your feat (GM's choice) comes to bear. When you attempt a roguish feat you are NOT
+						skilled in, you are <em>trusting fate</em>.
+					</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Feat</th>
+								<th>Risks</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Acrobatics</td>
+								<td>Break something, detection, plunge into danger</td>
+							</tr>
+							<tr>
+								<td>Blindside</td>
+								<td>Draw unwanted attention, leave evidence, plunge into danger</td>
+							</tr>
+							<tr>
+								<td>Counterfeit</td>
+								<td>Leave evidence, take too long, weak result</td>
+							</tr>
+							<tr>
+								<td>Cover Up <mark>T&O</mark></td>
+								<td>Detection, expend resources, take too long</td>
+							</tr>
+							<tr>
+								<td>Disable Device</td>
+								<td>Break something, draw unwanted attention, expend resources</td>
+							</tr>
+							<tr>
+								<td>Hide</td>
+								<td>Expend resources, leave evidence, take too long</td>
+							</tr>
+							<tr>
+								<td>Mastermind <mark>T&O</mark></td>
+								<td>Draw unwanted attention, plunge into danger, take too long</td>
+							</tr>
+							<tr>
+								<td>Pick Lock</td>
+								<td>Break something, detection, plunge into danger</td>
+							</tr>
+							<tr>
+								<td>Pickpocket</td>
+								<td>Leave evidence, take too long, weak result</td>
+							</tr>
+							<tr>
+								<td>Set Trap <mark>T&O</mark></td>
+								<td>Detection, expend resources, leave evidence</td>
+							</tr>
+							<tr>
+								<td>Sleight of Hand</td>
+								<td>Draw unwanted attention, leave evidence, weak result</td>
+							</tr>
+							<tr>
+								<td>Sneak</td>
+								<td>Break something, draw unwanted attention, plunge into danger</td>
+							</tr>
+							<tr>
+								<td>Tracking <mark>T&O</mark></td>
+								<td>Detection, plunge into danger, take too long</td>
+							</tr>
+							<tr>
+								<td>Use Device <mark>T&O</mark></td>
+								<td>Break something, plunge into danger, weak result</td>
+							</tr>
+						</tbody>
+					</table>
+				</details>
+				<details data-pin="move-figure-someone-out">
+					<summary><input type="checkbox" /><strong>Figure Someone Out</strong></summary>
+					<p>
+						When you <em>try to figure someone out</em>, roll with Charm. On a 10+, hold 3. On a
+						7&ndash;9, hold 1. While interacting with them, spend your hold 1 for 1 to ask their
+						player a question:
+					</p>
+					<ul>
+						<li>is your character telling the truth?</li>
+						<li>what is your character really feeling?</li>
+						<li>what does your character intend to do?</li>
+						<li>what does your character wish I'd do?</li>
+						<li>how could I get your character to _____?</li>
+					</ul>
+				</details>
+				<details data-pin="move-persuade-npc">
+					<summary><input type="checkbox" /><strong>Persuade an NPC</strong></summary>
+					<p>
+						When you <em>persuade an NPC with promises or threats</em>, roll with Charm. On a 10+,
+						they see things your way, provided you have given them a strong motive or reasonable
+						bribe. On a 7&ndash;9, they aren't sure; the GM will tell you what you need to do to
+						sway them.
+					</p>
+				</details>
+				<details data-pin="move-read-tense-situation">
+					<summary><input type="checkbox" /><strong>Read a Tense Situation</strong></summary>
+					<p>
+						When you <em>read a tense situation</em>, roll with Cunning. On a 7&ndash;9, ask 1. On a
+						10+, ask 3. Take +1 when acting on the answers.
+					</p>
+					<ul>
+						<li>what's my best way out / in / through?</li>
+						<li>who or what is the biggest threat?</li>
+						<li>who or what is most vulnerable to me?</li>
+						<li>what should I be on the lookout for?</li>
+						<li>who is in control here?</li>
+					</ul>
+				</details>
+				<details data-pin="move-trick-npm">
+					<summary><input type="checkbox" /><strong>Trick an NPC</strong></summary>
+					<p>
+						When you <em>trick an NPC to get what you want</em>, roll with Cunning. On a hit, they
+						take the bait and do what you want. On a 7&ndash;9, they can instead choose one:
+					</p>
+					<ul>
+						<li>they hesitate; you shake their confidence or weaken their morale</li>
+						<li>they stumble; you gain a critical opportunity</li>
+						<li>they overreact; take +1 forward against them</li>
+					</ul>
+				</details>
+				<details data-pin="move-trust-fate">
+					<summary><input type="checkbox" /><strong>Trust Fate</strong></summary>
+					<p>
+						When you <em>trust fate to get through trouble</em>, roll with Luck. On a hit, you
+						scrape by or barrel through; the GM will tell you what it costs you. On a 10+, fortune
+						favors the bold; your panache also earns you a fleeting opportunity.
+					</p>
+				</details>
+				<details data-pin="move-wreck-something">
+					<summary><input type="checkbox" /><strong>Wreck Something</strong></summary>
+					<p>
+						When you <em>wreck something</em>, roll with Might. On a hit, you seriously break it; it
+						can't be used again until it's repaired. On a 7&ndash;9, you're imprecise and dangerous;
+						you cause collateral damage, attract attention, or end up in a bad spot, GM's choice.
+					</p>
+				</details>
+				<details data-pin="move-help-or-interfere">
+					<summary><input type="checkbox" /><strong>Help or Interfere</strong></summary>
+					<p>
+						When you <em>help or interfere with another vagabond</em>, mark exhaustion to add +1 or
+						-2 to their roll (after rolling). Mark exhaustion again to select one of the following:
+					</p>
+					<ul>
+						<li>conceal your help or interference</li>
+						<li>create an opportunity or obstacle</li>
+					</ul>
+				</details>
+				<details data-pin="move-plead-with-pc">
+					<summary><input type="checkbox" /><strong>Plead with a PC</strong></summary>
+					<p>
+						When you <em>plead with a PC to go along with you</em>, they clear 1-exhaustion if they
+						agree to what you've proposed. You may use this move only once per session.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- weapon moves -->
+			<section>
+				<h2 id="weapon-moves">Weapon Moves</h2>
+				<h3 id="basic-weapon-moves">Basic Weapon Moves</h3>
+				<details data-pin="move-engage-in-melee">
+					<summary><input type="checkbox" /><strong>Engage in Melee</strong></summary>
+					<p>
+						When you <em>engage an enemy in melee at close or intimate range</em>, roll with Might.
+						On a hit, trade harm. On a 10+, pick 3. On a 7&ndash;9, pick 1.
+					</p>
+					<ul>
+						<li>inflict serious (+1) harm</li>
+						<li>suffer little (-1) harm</li>
+						<li>shift your range one step</li>
+						<li>impress, dismay, or frighten your foe</li>
+					</ul>
+				</details>
+				<details data-pin="move-grapple-enemy">
+					<summary><input type="checkbox" /><strong>Grapple an Enemy</strong></summary>
+					<p>
+						When you <em>grapple with an enemy at intimate range</em>, roll with Might. On a hit,
+						you choose simultaneously. Continue making choices until someone disengages, falls
+						unconscious, or dies. On a 10+, you make one choice first, before beginning to make
+						simultaneous choices.
+					</p>
+					<ul>
+						<li>you strike a fast blow; inflict injury</li>
+						<li>you wear them down; they mark exhaustion</li>
+						<li>you exploit weakness; mark exhaustion to inflict 2-injury</li>
+						<li>you withdraw; disengage to close range</li>
+					</ul>
+				</details>
+				<details data-pin="move-target-someone">
+					<summary><input type="checkbox" /><strong>Target Someone</strong></summary>
+					<p>
+						When you <em>target a vulnerable foe at far range</em>, roll with Finesse. On a hit, you
+						inflict injury. On a 10+, you can strike again before they get to cover&mdash;inflict
+						injury again&mdash;or keep your position hidden, your choice.
+					</p>
+				</details>
+				<h3 id="special-weapon-moves">Special Weapon Moves</h3>
+				<details data-pin="move-battle-fury">
+					<summary>
+						<input type="checkbox" /><strong>Battle Fury</strong>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>fling yourself into a fury of weapon, tooth, and claw in an all-out attack at
+							intimate range</em
+						>, mark wear on your weapon and roll with Luck. On a hit, fill your exhaustion track.
+						For each box your mark, inflict 2-injury on your target. Ona a 7&ndash;9, your target
+						also inflicts their harm upon you.
+						<em
+							>This move does not require the weapon to be tagged with intimate range; weapons with
+							close range may also be used.</em
+						>
+					</p>
+				</details>
+				<details data-pin="move-charge">
+					<summary><input type="checkbox" /><strong>Charge</strong> <mark>T&O</mark></summary>
+					<p>
+						When you <em>charge at an opponent at far range</em>, mark exhaustion and roll with
+						Might. On a hit, they must choose to either mark 2-exhaustion or allow you to push
+						them&mdash; you say where they are driven, and you say what range you now stand at. On a
+						10+, inflict morale harm on them as well.
+					</p>
+				</details>
+				<details data-pin="move-cleave">
+					<summary><input type="checkbox" /><strong>Cleave</strong></summary>
+					<p>
+						When you <em>cleave armored foes at close range</em>, mark exhaustion and roll with
+						Might. On a hit, you smash through their defenses and equipment; inflict 3-wear. On a
+						7&ndash;9, you overextend your weapon or yourself: mark wear or end up in a bad spot,
+						your choice.
+					</p>
+				</details>
+				<details data-pin="move-confuse-senses">
+					<summary><input type="checkbox" /><strong>Confuse Senses</strong></summary>
+					<p>
+						When you
+						<em>throw something to confuse an opponent's senses at close or intimate range</em>,
+						roll with Finesse. On a hit, you've thrown them off balance, blinded them, deafened
+						them, or confused them, and given yourself an opportunity. On a 10+, they have to take
+						some time to get their bearings and restore their senses before they can act clearly
+						again. On a 7&ndash;9, you have just a few moments.
+					</p>
+				</details>
+				<details data-pin="move-disarm">
+					<summary><input type="checkbox" /><strong>Disarm</strong></summary>
+					<p>
+						When you
+						<em>target an opponent's weapon with your strikes at close range</em>, roll with
+						Finesse. On a hit, they have to mark 2-exhaustion or lose their weapon&mdash;it's well
+						out of their reach. On a 10+, they have to mark 3-exhaustion instead of 2.
+					</p>
+				</details>
+				<details data-pin="move-frightful-flourish">
+					<summary>
+						<input type="checkbox" /><strong>Frightful Flourish</strong>
+						<mark>no tag</mark>
+						<mark>R&E</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>flourish your weapon in a fanciful and terrifying way when you engage a new enemy</em
+						>, roll with Charm. On a hit, your new opponent suffers 2-morale harm as you demonstrate
+						your battle prowess, but your must mark an exhaustion as you over-exert yourself in the
+						frightening performance. On a 10+, your martial display only bolsters your resolve; you
+						do not mark exhaustion.
+					</p>
+				</details>
+				<details data-pin="move-hammerpaws">
+					<summary>
+						<input type="checkbox" /><strong>Hammerpaws</strong> <mark>no tag</mark>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>come to blows with an armed opponent at close or intimate range while you are
+							unarmed</em
+						>, roll with Finesse. On a hit, they inflict their harm on you. On a 7&ndash;9, choose
+						2. On a 10+, choose 3.
+					</p>
+					<ul>
+						<li>you inflict 2-exhaustion on your opponent</li>
+						<li>you shift your range one step</li>
+						<li>you deflect some of their incoming blows; suffer little (-1) harm</li>
+						<li>you inflict wear on their equipment with precise strikes</li>
+						<li>you take an object from them; they must mark exhaustion to stop you</li>
+					</ul>
+				</details>
+				<details data-pin="move-harry-group">
+					<summary><input type="checkbox" /><strong>Harry a Group</strong></summary>
+					<p>
+						When you <em>harry a group of enemies at far range</em>, mark wear and roll with
+						Cunning. On a 10+, both. On a 7&ndash;9, choose 1:
+					</p>
+					<ul>
+						<li>inflict 2-morale harm</li>
+						<li>they are pinned or blocked</li>
+					</ul>
+				</details>
+				<details data-pin="move-hurl">
+					<summary>
+						<input type="checkbox" /><strong>Hurl</strong> <mark>no tag</mark>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>hurl a weapon or dangerous object not intended for throwing at an enemy at far
+							range</em
+						>, mark exhaustion and roll with Might. On a hit, your hurled weapon strikes your
+						target; mark wear on the weapon and inflict 1-injury and 1-exhaustion on your target. On
+						a 7&ndash;9, choose 1. On a 10+, choose 2.
+					</p>
+					<ul>
+						<li>mark an additional wear on the hurled item to inflict an additional 1-injury</li>
+						<li>
+							the hurled item rebounds to somewhere reachable, instead of out of sight or out of
+							reach
+						</li>
+						<li>your target is knocked off their feat by the throw</li>
+					</ul>
+				</details>
+				<details data-pin="move-improvise-weapon">
+					<summary>
+						<input type="checkbox" /><strong>Improvise a Weapon</strong>
+						<mark>no tag</mark>
+					</summary>
+					<p>
+						When you
+						<em>make a weapon out of improvised materials around you</em>, roll with Cunning. On a
+						hit, you make a weapon; they GM will tell you its range tag and at least one other
+						beneficial tag based on the materials you used. On a 7&ndash;9, the weapon also has a
+						weakness tag.
+					</p>
+				</details>
+				<details data-pin="move-long-shot">
+					<summary>
+						<input type="checkbox" /><strong>Long Shot</strong>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you <em>pull hard on your bow's draw to extend its range beyond far</em>, mark wear
+						and exhaustion to roll any far range weapon move (<em>target someone</em>,
+						<em>pinpoint shot</em>, etc.) with Might instead of the move's normal stat, paying the
+						additional cost(s) of the weapon move as well.
+						<em
+							>This weapon skill requires your weapon to be tagged with far range, this skill, and
+							the tag for whatever weapon move you are using (if needed).</em
+						>
+					</p>
+				</details>
+				<details data-pin="move-lunge">
+					<summary><input type="checkbox" /><strong>Lunge</strong> <mark>T&O</mark></summary>
+					<p>
+						When you <em>make an outright lunge at a foe within close range</em>, choose an amount
+						injury between 1-injury and 3-injury and roll with Finesse. On a hit, you inflict that
+						amount of injury&mdash;ignoring armor&mdash;but if your target survives (or if other
+						foes are present) they can take advantage of your over-extension to inflict the same
+						amount on you. On a 7&ndash;9, they can inflict 1-injury more upon you than you had
+						originally chosen to inflict upon them.
+					</p>
+				</details>
+				<details data-pin="move-paired-fighting">
+					<summary>
+						<input type="checkbox" /><strong>Paired Fighting</strong>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you and another vagabond
+						<em>pair fight back to back against foes at close range</em>, you each mark exhaustion
+						and one of you rolls with the following modifiers (max +3):
+					</p>
+					<ul>
+						<li>+1 if you have a connection with each other</li>
+						<li>+1 if you are outnumbered</li>
+						<li>+1 for every 2 additional exhaustion you mark between the two of you</li>
+					</ul>
+					<p>
+						On a hit, you together inflict 1-injury on every foe within close range (or 3-injury
+						total against a group), and you each suffer 1-injury. On a 7&ndash;9, choose 1. On a
+						10+, choose 2.
+					</p>
+					<ul>
+						<li>you each suffer little (-1) harm</li>
+						<li>
+							you inflict an additional 2-injury to any single target (including a single group) of
+							your choice
+						</li>
+						<li>you inflict 2-morale harm</li>
+						<li>you create a path for the two of you to retreat or advance</li>
+					</ul>
+				</details>
+				<details data-pin="move-parry">
+					<summary><input type="checkbox" /><strong>Parry</strong></summary>
+					<p>
+						When you <em>try to parry the attacks of an enemy at close range</em>, mark exhaustion
+						and roll with Finesse. On a hit, you consume their attention. On a 10+, all 3. On a
+						7&ndash;9, pick 1.
+					</p>
+					<ul>
+						<li>you inflict morale or exhaustion harm (GM's choice)</li>
+						<li>you disarm your opponent; their weapon is out of hand, but in reach</li>
+						<li>you don't suffer any harm</li>
+					</ul>
+				</details>
+				<details data-pin="move-pinpoint-shot">
+					<summary>
+						<input type="checkbox" /><strong>Pinpoint Shot</strong>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you <em>take the time to fire a shot at far range with pinpoint accuracy</em>, roll
+						with Cunning. On a hit, you put the shot exactly where you choose:
+					</p>
+					<ul>
+						<li>if you target an NPC's weak point, inflict 3-injury (unblockable by armor)</li>
+						<li>if you target a piece of equipment's weak point, inflict 2-wear</li>
+						<li>
+							if you target something in the environment, you strike it, cut it, or break it as
+							appropriate
+						</li>
+					</ul>
+					<p>
+						On a 7&ndash;9, your current vantage point isn't quite right; you need to move to a
+						better one before you can make the perfect shot. Mark exhaustion to scramble there, and
+						then choose as normal.
+					</p>
+				</details>
+				<details data-pin="move-point-blank-shot">
+					<summary>
+						<input type="checkbox" /><strong>Point-Blank Shot</strong>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you <em>fire a shot at point-blank range (intimate range)</em>, mark any
+						combination of up to 2-wear and up to 2-exhaustion, and roll with Luck. On a hit, you
+						put your shot into your target; inflict injury equivalent to the wear and exhaustion you
+						marked, combined. On a 10+, you can also skip back after your shot, moving to close
+						range before your opponent can grab you or otherwise retaliate.
+						<em
+							>Your weapon does not need to be tagged with intimate range to use this weapon
+							skill.</em
+						>
+					</p>
+				</details>
+				<details data-pin="move-pommel-strike">
+					<summary>
+						<input type="checkbox" /><strong>Pommel Strike</strong>
+						<mark>R&E</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>deftly use the enlarged pommel of your weapon to strike an enemy at intimate
+							range</em
+						>
+						(even with a weapon not tagged for intimate range), roll with Luck. On a hit, they mark
+						2-exhaustion. On a 10+, they must also pick 1:
+					</p>
+					<ul>
+						<li>you seize an advantageous position in the fight</li>
+						<li>you shake their confidence; inflict 1-morale harm</li>
+						<li>you knock them off-kilter; their next blow does -1 harm</li>
+					</ul>
+				</details>
+				<details data-pin="move-quick-shot">
+					<summary><input type="checkbox" /><strong>Quick Shot</strong></summary>
+					<p>
+						When you <em>fire a snap shot at an enemy at close range</em>, roll with Luck. On a hit,
+						inflict injury. On 7&ndash;9, choose 1. On a 10+, choose 2.
+					</p>
+					<ul>
+						<li>you don't mark wear</li>
+						<li>you don't mark exhaustion</li>
+						<li>you move quickly and change your position (and, if you choose, range)</li>
+						<li>you keep your target at bay&mdash;they don't move</li>
+					</ul>
+				</details>
+				<details data-pin="move-storm-group">
+					<summary><input type="checkbox" /><strong>Storm a Group</strong></summary>
+					<p>
+						When you <em>storm a group of foes in melee</em>, mark exhaustion and roll with Might.
+						On a hit, trade harm. On a 10+, choose 2. On a 7&ndash;9, choose 1.
+					</p>
+					<ul>
+						<li>you show them up; you inflict 2-morale harm</li>
+						<li>you keep them off-balance and confused; you inflict 2-exhaustion</li>
+						<li>you avoid their blows to the best of your ability; you suffer little (-1) harm</li>
+						<li>
+							you use them against each other; mark exhaustion again and they inflict their harm
+							against themselves
+						</li>
+					</ul>
+				</details>
+				<details data-pin="move-surprise-jab">
+					<summary>
+						<input type="checkbox" /><strong>Surprise Jab</strong>
+						<mark>R&E</mark>
+					</summary>
+					<p>
+						When you <em>strike with a surprise weapon at intimate range</em>, mark exhaustion and
+						roll with Finesse. On a hit, inflict your weapon's harm. On a 10+ pick 3. On a
+						7&ndash;9, pick 1.
+					</p>
+					<ul>
+						<li>you inflict serious (+1) harm (you may pick this option multiple times)</li>
+						<li>your enemy must mark 2-exhaustion or drop what they are holding</li>
+						<li>you seize something vulnerable from them (item, position, etc.)</li>
+					</ul>
+				</details>
+				<details data-pin="move-sweep">
+					<summary><input type="checkbox" /><strong>Sweep</strong> <mark>R&E</mark></summary>
+					<p>
+						When you <em>sweep your bow at an enemy or group or enemies at close range</em>
+						(even with a bow not tagged with close range), mark exhaustion and roll with Finesse. On
+						a 7&ndash;9, you succeed; they scatter and fall back a range, creating an opportunity
+						for you or your allies. On a 10+, pick one as well:
+					</p>
+					<ul>
+						<li>they stumble and slip, buying you more time</li>
+						<li>they crash into each other; inflict 1-injury</li>
+						<li>they are frightened or dismayed; inflict 1-morale harm</li>
+					</ul>
+				</details>
+				<details data-pin="move-switch-hands">
+					<summary><input type="checkbox" /><strong>Switch Hands</strong></summary>
+					<p>
+						When you
+
+						<em
+							>shift your grip to change your dominant hand in the middle of an extended bout with a
+							foe</em
+						>, roll with Finesse. On a 7&ndash;9, choose 1. On a 10+, choose 2:
+					</p>
+					<ul>
+						<li>your new dominant hand is fresher; clear 2-exhaustion</li>
+						<li>your opponent is startled by the shift; they mark morale harm</li>
+						<li>
+							your shift gives you an immediate opportunity; mark exhaustion to seize it and inflict
+							2-injury
+						</li>
+					</ul>
+				</details>
+				<details data-pin="move-trick-shot">
+					<summary><input type="checkbox" /><strong>Trick Shot</strong></summary>
+					<p>
+						When you
+						<em>fire a clever shot designed to take advantage of the environment at any range</em>,
+						mark wear and roll with Finesse. On a 7&ndash;9, choose 2. On a 10+, choose 3.
+					</p>
+					<ul>
+						<li>
+							your shot lands in any target of your choice within range, even if it's behind cover
+							or hidden (inflicting injury or wear if appropriate)
+						</li>
+						<li>your shot strikes a second available target of your choice</li>
+						<li>
+							your shot cuts something, breaks something, or knocks something over, your choice
+						</li>
+						<li>your shot distracts an opponent and provides an opportunity</li>
+					</ul>
+				</details>
+				<details data-pin="move-vicious-strike">
+					<summary><input type="checkbox" /><strong>Vicious Strike</strong></summary>
+					<p>
+						When you
+						<em>viciously strike an opponent where they are weak at intimate or close range</em>,
+						mark exhaustion and roll with Might. On a hit, they suffer serious (+1) harm and cannot
+						mark wear on their armor to block it. On a 10+, you get away with the strike. On a
+						7&ndash;9, they score a blow against you as well.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- reputation moves -->
+			<section>
+				<h2 id="reputation-moves">Reputation Moves</h2>
+				<details data-pin="move-ask-for-favor">
+					<summary><input type="checkbox" /><strong>Ask for a Favor</strong></summary>
+					<p>
+						When you <em>ask for a reasonable favor based on your reputation</em>, roll with
+						Reputation with the appropriate faction. On a hit, they'll grant you what you want. On a
+						7&ndash;9, it costs your rep a bit; clear prestige or mark notoriety, your choice. On a
+						miss, they refuse and view you with suspicion; mark notoriety.
+					</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Reputation</th>
+								<th>Favor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>+2, +3</td>
+								<td>Minor military backup, 5- or 6-Value in monetary or physical resources</td>
+							</tr>
+							<tr>
+								<td>+1</td>
+								<td>Free equipment repair, full depletion resupply, a comfortable place to stay</td>
+							</tr>
+							<tr>
+								<td>+0</td>
+								<td>
+									Information, one or two boxes of depletion resupply, a barebones place to stay
+								</td>
+							</tr>
+							<tr>
+								<td>-1</td>
+								<td>A few moments to hear you out</td>
+							</tr>
+							<tr>
+								<td>-2, -3</td>
+								<td>A head start</td>
+							</tr>
+						</tbody>
+					</table>
+				</details>
+				<details data-pin="move-meet-someone-important">
+					<summary><input type="checkbox" /><strong>Meet Someone Important</strong></summary>
+					<p>
+						When you <em>meet with someone important for the first time</em>, roll with Reputation
+						for their faction. On a hit, you're aware of their reputation (if any), and they're
+						aware of yours (if any). On a 7&ndash;9, pick one. On a 10+, both.
+					</p>
+					<ul>
+						<li>
+							you've heard stores; ask a question about them, and the GM will tell you one story
+							you've heard about them or their interests as an answer
+						</li>
+						<li>
+							they've heard something in your favor; take +1 forward when you first try to play up
+							your connection with them and their faction
+						</li>
+					</ul>
+					<p>
+						On a miss, you only know the basics about them, and they've heard stores about you and
+						things you've done, true or false&mdash;prepare for major complications.
+					</p>
+				</details>
+				<details data-pin="move-endorse-new-leader">
+					<summary>
+						<input type="checkbox" /><strong>Endorse a New Leader</strong> <mark>+1</mark>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>openly endorse an individual as the new leader of a faction's forces and/or presence
+							in a clear</em
+						>, roll with Reputation with that faction. On a hit, you throw your support behind that
+						individual and the faction's representatives in that clearing react. On a 7&ndash;9, the
+						GM chooses 2. On a 10+, the GM chooses 1.
+					</p>
+					<ul>
+						<li>
+							the faction's current leadership in the clearing is directly opposed; you need to
+							handle them before your endorsed candidate can take over
+						</li>
+						<li>
+							the denizens of the clearing aren't on board; you need to speak to denizen leadership
+							and convince them, or expect direct opposition
+						</li>
+						<li>
+							the faction's enemies in the clearing want to take advantage of the shift in power;
+							keep an eye out for conspiracies and plots
+						</li>
+					</ul>
+					<p>
+						On a miss, after you publicly announce your support something new and dangerous is
+						revealed about the leadership or the individual you endorsed that reframes the
+						situation.
+					</p>
+				</details>
+				<details data-pin="move-vilify-leader">
+					<summary>
+						<input type="checkbox" /><strong>Vilify a Leader</strong> <mark>+1</mark>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>openly vilify an existing leader of a faction's forces and/or presence in a
+							clearing</em
+						>, roll with Reputation with that faction. On a hit, you've stirred up dissent&mdash;the
+						leader's departure from power is set in motion. They will be removed from power when the
+						next time passes&hellip;unless they take other action (alliances, use of force, etc.) to
+						quash the dissent. In the meantime, on a 7&ndash;9, the GM chooses 2. On a 10+, the GM
+						chooses 1.
+					</p>
+					<ul>
+						<li>
+							your words are taken up and elaborated upon; resistance to the leader you targeted
+							threatens to get out of control, involving violence or arson
+						</li>
+						<li>
+							the leader (or their defenders and supporters) grows more radical in their
+							defensiveness; they will respond to any threats to their position with force
+						</li>
+						<li>you are singled out for your blunt outspokenness; expect reprisals</li>
+					</ul>
+					<p>
+						On a miss, your words wind up stoking opposition&mdash;more denizens, agents, and
+						faction members come out in support of the leader you tried to vilify.
+					</p>
+				</details>
+				<details data-pin="move-draw-attention">
+					<summary>
+						<input type="checkbox" /><strong>Draw Attention</strong> <mark>-2</mark>
+					</summary>
+					<p>
+						When you <em>try to publicly draw attention to yourself as an enemy of a faction</em>,
+						roll with Reputation for that faction, treating it as positive (+2 or +3) for this roll.
+						On a hit, you draw out the faction's resources to oppose you; brace yourself. On a
+						7&ndash;9, choose 1; on a 10+, choose 2.
+					</p>
+					<ul>
+						<li>the faction employs significant military strength to chase you down</li>
+						<li>
+							the faction deploys an available, capable NPC agent (of your choice) to chase you down
+						</li>
+						<li>the faction is rattled by your threat; mark 2-notoriety with them</li>
+					</ul>
+					<p>
+						On a miss, your enemies are already moving against you quietly; the GM tells you how
+						they catch you unprepared.
+					</p>
+				</details>
+				<details data-pin="move-intimidate-enemy-troops">
+					<summary>
+						<input type="checkbox" /><strong>Intimidate Enemy Troops</strong> <mark>-2</mark>
+						<mark>T&O</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>draw attention to yourself and threaten enemy troops by wielding your Reputation
+							through an intimidating display</em
+						>, roll with Reputation with the enemy's faction, treating it as positive (+2 or +3) for
+						this roll. On a hit, you put feat into the enemy. On a 7&ndash;9, pick 1. On a 10+, pick
+						2.
+					</p>
+					<ul>
+						<li>
+							the enemy troops won't act until their leader makes a rallying speech or cry to
+							them&mdash;the leader is exposed and vulnerable to attack
+						</li>
+						<li>the enemy troops will target you, above all else, when they attack</li>
+						<li>the enemy troops are rattled; inflict 2-morale harm on the group</li>
+					</ul>
+					<p>
+						On a miss, the enemy is invigorated by their anger at you, and they right now, in full
+						force.
+					</p>
+				</details>
+				<details data-pin="move-forge-resistance">
+					<summary>
+						<input type="checkbox" /><strong>Forge Resistance</strong> <mark>+2</mark>
+						<mark>R&E</mark>
+					</summary>
+					<p>
+						When you
+						<em
+							>promise to lead a group of downtrodden NPCs when they are faced with a frightful
+							situation, desperate odds, or organized oppression</em
+						>, roll with your Reputation for their faction. On a hit, they rally, finding new
+						strength in your words; they coalesce into an appropriately-sized group that will follow
+						you. On a 10+, a capable leader also emerged from the group to lead alongside you; they
+						will tell you what you need to do to inspire them to lead on their own. On a miss, your
+						attempt to hearten the downtrodden draws unwanted attention from their enemies,
+						trampling the hope you wished to foster; mark 2-notoriety with those you tried to lead
+						and brace yourself for their enemies.
+					</p>
+				</details>
+				<details data-pin="move-sway-npc">
+					<summary><input type="checkbox" /><strong>Sway an NPC</strong> <mark>+2</mark></summary>
+					<p>
+						When you
+						<em
+							>try to sway an open or vulnerable NPC by appealing to their belief in your
+							reputation</em
+						>
+						roll with Reputation for their faction. On a hit, you can change their mind about the
+						world; say what you want them to believe, and the GM will rewrite their drive
+						accordingly. On a 7&ndash;9, you use up some goodwill; clear 3-prestige. If you don't
+						have enough prestige to clear, mark the remainder in notoriety. On a miss, the NPC takes
+						the wrong message away from what you say; the GM will rewrite their drive accordingly.
+					</p>
+				</details>
+				<details data-pin="move-call-upon-enemies-of-enemies">
+					<summary>
+						<input type="checkbox" /><strong>Call Upon the Enemies of Your Enemies</strong>
+						<mark>-3</mark> <mark>R&E</mark>
+					</summary>
+					<p>
+						When you
+						<em>spread word that you're looking for allies against a powerful foe in the area</em>,
+						roll with your Reputation with that foe's faction, treating Reputation as positive (+3)
+						for this roll. On a hit, you discover powerful allies who are willing to help, but
+						they're beset by their own internal squabbles. On a 7&ndash;9, you realize that your foe
+						has eyes and ears amongst them; you risk exposing your new friends to serious
+						consequences if you move them to action while the traitor is still active. On a miss,
+						your foolish call for help leads you right into a trap set by your enemies.
+					</p>
+				</details>
+				<details data-pin="move-make-pointed-threat">
+					<summary>
+						<input type="checkbox" /><strong>Make a Pointed Threat</strong> <mark>-3</mark>
+					</summary>
+					<p>
+						When you <em>make a pointed threat to an NPC by wielding your reputation</em>, roll with
+						Reputation for their faction, treating it as positive (+3) for this roll. On a 10+, they
+						are rattled; they must surrender, retreat, or charge, GM's choice. On a 7&ndash;9, you
+						must make a demonstration of your dangerous intent first, before they are rattled. On a
+						miss, your reputation precedes you; they reveal how they prepared for someone like you.
+					</p>
+				</details>
+				<details data-pin="move-command-resources">
+					<summary>
+						<input type="checkbox" /><strong>Command Resources</strong> <mark>+3</mark>
+					</summary>
+					<p>
+						When you <em>command an NPC to give your significant, valuable resources</em>, roll with
+						Reputation for their faction. On a 10+, you get what you need as soon as they can get it
+						to you. On a 7&ndash;9, they impose a condition on how you can use the resources, or
+						what you must return to the faction in recompense. On a miss, they don't have what you
+						need, but they tell you a way you can get it at a steep cost or some serious difficulty.
+					</p>
+				</details>
+				<details data-pin="move-lead-troops-in-battle">
+					<summary>
+						<input type="checkbox" /><strong>Lead Troops in Battle</strong> <mark>+3</mark>
+					</summary>
+					<p>
+						When you <em>lead troops of a faction in battle</em>, roll with Reputation with that
+						faction. On a hit, they accept you as their commander for the fight. On a 7&ndash;9,
+						hold 2. On a 10+, hold 3. Spend your hold 1-for-1 during the fight to commit them to:
+					</p>
+					<ul>
+						<li>take a hold a location</li>
+						<li>rout a substantial enemy presence</li>
+						<li>take an enemy leader captive</li>
+						<li>destroy a fortification or resource</li>
+						<li>defend a group or location</li>
+					</ul>
+					<p>
+						On a miss, your troops engage in battle but with a confused command structure&mdash;they
+						wind up embroiled in chaotic battle across the entire area, and in their confusion,
+						they're losing.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- travel moves -->
+			<section>
+				<h2 id="travel-moves">Travel Moves</h2>
+				<details data-pin="move-travel-through-forest">
+					<summary><input type="checkbox" /><strong>Travel Through the Forest</strong></summary>
+					<p>
+						When you <em>travel from clearing to clearing through the forest</em>, the band
+						collectively decides how it travels and one member of the band rolls for the group:
+					</p>
+					<ul>
+						<li>
+							slowly, foraging heavily: everyone clears 2-depletion; the band collectively marks an
+							exhaustion for each band member; -1 to the roll
+						</li>
+						<li>
+							carefully, avoiding trouble: the band collectively marks one depletion or exhaustion
+							for each band member; +1 to the roll
+						</li>
+						<li>as quickly as possible: everyone marks exhaustion and depletion; +2 to the roll</li>
+					</ul>
+					<p>
+						On a hit, you pass through the forest to any clearing on the other side. Along the way,
+						one of you spots an interesting site; you leave markers so you can return after you
+						finish your trip. On a 10+, the transit is largely safe. On a 7&ndash;9, something from
+						the forest is following you; you can let it track you, or every vagabond marks
+						exhaustion to lose it. On a miss, you run afoul of one of the forest's dangers during
+						the trip, and you can't escape it easily; deal with it before you can reach the clearing
+						on the other side.
+					</p>
+				</details>
+				<details data-pin="move-travel-along-path">
+					<summary><input type="checkbox" /><strong>Travel Along the Path</strong></summary>
+					<p>
+						When you <em>travel from clearing to clearing along the path</em>, the band collectively
+						decides how it travels and one member of the band rolls for the group:
+					</p>
+					<ul>
+						<li>
+							at a relaxing pace: everyone clears 3-exhaustion; the band collectively marks a total
+							of 2-depletion; -1 to the roll
+						</li>
+						<li>
+							at an average pace: everyone clears 2-exhaustion; the band collectively marks
+							1-depletion; +0 to the roll
+						</li>
+						<li>
+							safely, quickly, and under the radar: the band collectively marks 1-depletion for
+							supplies; +1 to the roll
+						</li>
+						<li>urgently fast: everyone marks exhaustion; +2 to the roll</li>
+					</ul>
+					<p>
+						On a hit, you reach the next clearing in a timely fashion. On a 10+, the trip is
+						uninterrupted and quick. On a 7&ndash;9, you encounter something noteworthy on the
+						path&mdash; a caravan, a battleground, or something else odd passing through. On a miss,
+						you are caught in the middle of a dangerous situation before you arrive at the next
+						clearing.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- session moves -->
+			<section>
+				<h2 id="session-moves">Session Moves</h2>
+				<details data-pin="move-check-drives">
+					<summary><input type="checkbox" /><strong>Check Drives</strong></summary>
+					<p>
+						<em>When the session ends</em>, one at a time, each player reads their drives out loud.
+						The players and GM discuss whether the player fulfilled their drive during the session
+						in an instance that wasn't already called out during the session. If they did, and they
+						did not already advance this session for the drive in question, then they advance.
+					</p>
+				</details>
+				<details data-pin="move-update-playbook">
+					<summary><input type="checkbox" /><strong>Update Playbook</strong></summary>
+					<p>
+						<em>When the session ends</em>, one at a time, each player may choose one element of
+						their playbook to update or change. They do not have to choose anything, if they don't
+						want to. They may choose one of the following options:
+					</p>
+					<ul>
+						<li>Replace one drive with a new drive from any playbook</li>
+						<li>Replace nature with a new nature from any playbook</li>
+						<li>
+							Replace a connection (both type and subject) with a new connection from any playbook
+						</li>
+					</ul>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- ruin moves -->
+			<section>
+				<h2 id="ruin-moves">Ruin Moves</h2>
+				<details data-pin="move-search-for-ruins">
+					<summary>
+						<input type="checkbox" /><strong>Search for Ruins</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						When you <em>travel into the forest to search for ruins</em>, one member of the band
+						rolls for the group:
+					</p>
+					<ul>
+						<li>if the band has a detailed map of the area, take +1</li>
+						<li>if any vagabond has +2 Luck or greater, take +1</li>
+						<li>if any vagabond has more than 1-injury marked, take -1</li>
+						<li>if the band doesn't have a local guide, take -1</li>
+					</ul>
+					<p>
+						On a hit, you find the site you seek, safely arriving at the gates of the ruins! On a
+						10+, you discover a safe and inviting area nearby; everyone can clear an exhaustion if
+						you make camp before delving deeper. On a 7&ndash;9, you instead spot a threat of the
+						ruins blocking your path forward; you'll have to find a way past or through it to enter
+						the ruins themselves. On a miss, the ruins find you; a threat of the ruins drags you
+						deeper in before you have time to prepare for your delve.
+					</p>
+				</details>
+				<details data-pin="move-return-from-forest-ruins">
+					<summary>
+						<input type="checkbox" /><strong>Return from a Forest Ruin</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						When you <em>return from a forest ruin</em>, the band collectively decides how it
+						travels and one member of the band rolls for the group:
+					</p>
+					<ul>
+						<li>
+							calmly and quietly, taking time to retrace your steps: the band collectively marks
+							1-depletion for each member; +0 to the roll
+						</li>
+						<li>
+							quickly and efficiently, conserving resources: everyone marks 1-exhaustion; +1 to the
+							roll
+						</li>
+						<li>
+							fleeing toward safety: everyone marks 2-exhaustion or 2-injury&mdash;their
+							choice&mdash;and 2-wear; +2 to the roll
+						</li>
+					</ul>
+					<p>
+						On a hit, you make it to a nearby clearing&mdash;carrying whatever you obtained on your
+						delve&mdash;and largely avoid the dangers and obstacles of the forest. On a 7&ndash;9,
+						your return to civilization, however, is marred by a reminder of the War and its
+						consequences. On a miss, something catches up with you before you can make it out of the
+						forest&hellip;or you discover too late that someone you don't trust awaits your return!
+					</p>
+				</details>
+				<details data-pin="move-press-forward">
+					<summary>
+						<input type="checkbox" /><strong>Press Forward</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						When you <em>press forward into a new area of the deep ruins</em>, a member of the band
+						must mark 1-depletion; if you can't or won't mark depletion, a threat of the ruin comes
+						to bear on your band.
+					</p>
+				</details>
+				<details data-pin="move-delve-deeper">
+					<summary><input type="checkbox" /><strong>Delve Deeper</strong> <mark>R&E</mark></summary>
+					<p>
+						When you <em>delve deeper into a ruin toward a new level through an open pathway</em>,
+						one member of the band rolls for the group:
+					</p>
+					<ul>
+						<li>if every member of the band is free of injury, take +1</li>
+						<li>if the band collectively marks 2-depletion and 2-wear, take +1</li>
+						<li>if the band is dealing with an active threat or crisis, take -2</li>
+					</ul>
+					3
+					<p>
+						On a hit, your band moves to the next level of the deep ruins. On a 10+, your descent is
+						auspicious; you find some natural resources or a secure place to camp, your choice. On a
+						mis, you descend&hellip;but a serious threat of the ruins comes to bear, trapping you on
+						the lower level until you deal with it or find another route.
+					</p>
+				</details>
+				<details data-pin="move-scavenge-for-resources">
+					<summary>
+						<input type="checkbox" /><strong>Scavenge for Resources</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						When your band <em>scavenges for resources in the deep ruins</em>, one member of the
+						band rolls a number of dice equal to the level you are on currently, plus however many
+						safe chambers are adjacent to the band's location. Individual vagabonds in the band can
+						spend these dice by their value to:
+					</p>
+					<ul>
+						<li>1&ndash;2: recover 1-depletion</li>
+						<li>3&ndash;4: recover 1-depletion and 1-wear</li>
+						<li>5&ndash;6: clear 2-depletion or discover and item worth 3-value</li>
+					</ul>
+					<p>
+						The band can only make this move once per level of the ruins; you must descend to a new
+						level in order to scavenge again.
+					</p>
+				</details>
+				<details data-pin="move-make-camp-in-ruins">
+					<summary>
+						<input type="checkbox" /><strong>Make Camp in the Ruins</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						When your band <em>makes camp in the deep ruins</em>, each member of the band marks any
+						amount of depletion, and one member of the band rolls with the total (max +4, including
+						the bonuses below).
+					</p>
+					<ul>
+						<li>if there's a useful resource nearby (water, food, etc.), take +1</li>
+						<li>if there's shelter or security (caves, stone doors, etc.), take +1</li>
+						<li>if a member of the band forgoes any benefits to stand watch, take +1</li>
+					</ul>
+					<p>
+						On a hit, the band gets some rest; each member clears an exhaustion. On a 7-9, each
+						member also picks 1. On a 10+, they instead pick 2:
+					</p>
+					<ul>
+						<li>you get some sleep; clear an additional exhaustion</li>
+						<li>you have time for makeshift repairs; clear 1-wear</li>
+						<li>you map the area; take an extra die when <em>scavenging</em> this level</li>
+					</ul>
+					<p>
+						On a miss, the supplies you spend are wasted as a threat of the ruin suddenly comes to
+						bear; tell the GM the watch order, and they will tell you who first spots the danger now
+						upon you.
+					</p>
+				</details>
+				<details data-pin="move-retreat-back-to-surface">
+					<summary>
+						<input type="checkbox" /><strong>Retreat Back to the Surface</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						When you <em>retreat from the ruins back to the surface</em>, one member of the band
+						rolls for the group:
+					</p>
+					<ul>
+						<li>if you can chart a course out through safe rooms, take +1</li>
+						<li>if each member of the band marks 1-exhaustion, take +1</li>
+						<li>if the band is retreating in the face of an active threat, take -1</li>
+						<li>if any member of the band is burdened, take -2</li>
+					</ul>
+					<p>
+						On a 10+, you scramble back to the surface, emerging to relative safety wherever you
+						first entered the ruins. On a 7-9, one threat of the ruins blocks your escape; you must
+						deal with it before you can claw your way out. On a miss, you find yourself trapped
+						between an obstacle that blocks your path forward and a threat that won't stop
+						advancing.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- natures -->
+			<section>
+				<h2 id="natures">Natures</h2>
+				<details data-pin="nature-activist">
+					<summary><input type="checkbox" /><strong>Activist</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you publicly confront the leadership fo a clearing
+						about changes you think are vital to the community's success.
+					</p>
+				</details>
+				<details data-pin="nature-advisor">
+					<summary><input type="checkbox" /><strong>Advisor</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you help uplift an NPC to an influential or leadership
+						position.
+					</p>
+				</details>
+				<details data-pin="nature-advocate">
+					<summary><input type="checkbox" /><strong>Advocate</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you confront a powerful NPC about their mistreatment of
+						the powerless or weak.
+					</p>
+				</details>
+				<details data-pin="nature-agent">
+					<summary><input type="checkbox" /><strong>Agent</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you convince someone influential to allow you to
+						represent their interests.
+					</p>
+				</details>
+				<details data-pin="nature-arsonist">
+					<summary><input type="checkbox" /><strong>Arsonist</strong></summary>
+					<p>
+						Clear your exhaustion track when you use needlessly destructive or damaging methods to
+						solve a problem.
+					</p>
+				</details>
+				<details data-pin="nature-avenger">
+					<summary><input type="checkbox" /><strong>Avenger</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you openly attack those who have wronged you or your
+						sworn vassals and wards.
+					</p>
+				</details>
+				<details>
+					<summary><input type="checkbox" /><strong>Bandit</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you try to use the threat of force to secure valuables
+						from formidable opposition.
+					</p>
+				</details>
+				<details data-pin="nature-believer">
+					<summary><input type="checkbox" /><strong>Believer</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you publicly call out a symbol or authority dedicated
+						to beliefs opposed to yours.
+					</p>
+				</details>
+				<details data-pin="nature-braggart">
+					<summary><input type="checkbox" /><strong>Braggart</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you confidently and publicly accept an excessively
+						perilous challenge.
+					</p>
+				</details>
+				<details data-pin="nature-broker">
+					<summary><input type="checkbox" /><strong>Broker</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you convince someone influential to enter a mutually
+						beneficial partnership.
+					</p>
+				</details>
+				<details data-pin="nature-charitable">
+					<summary><input type="checkbox" /><strong>Charitable</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you gift a valuable treasure to the leaders of a
+						clearing.
+					</p>
+				</details>
+				<details data-pin="nature-combative">
+					<summary><input type="checkbox" /><strong>Combative</strong></summary>
+					<p>
+						Clear your exhaustion track when you try to start a fight against overwhelming
+						opposition.
+					</p>
+				</details>
+				<details data-pin="nature-commander">
+					<summary><input type="checkbox" /><strong>Commander</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you assert authority over a group of non-vagabonds in a
+						tense situation.
+					</p>
+				</details>
+				<details data-pin="nature-companion">
+					<summary><input type="checkbox" /><strong>Companion</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you effusively praise a friend to a powerful person or
+						group.
+					</p>
+				</details>
+				<details data-pin="nature-competitive">
+					<summary><input type="checkbox" /><strong>Competitive</strong></summary>
+					<p>
+						Clear your exhaustion track when you take dramatically unnecessary risks to show off.
+					</p>
+				</details>
+				<details data-pin="nature-cowardly">
+					<summary><input type="checkbox" /><strong>Cowardly</strong> <mark>T&O</mark></summary>
+					<p>Clear your exhaustion track when you willingly surrender to hostile forces.</p>
+				</details>
+				<details data-pin="nature-curious">
+					<summary><input type="checkbox" /><strong>Curious</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you enter danger to investigate an interesting
+						situation or location further.
+					</p>
+				</details>
+				<details data-pin="nature-cynic">
+					<summary><input type="checkbox" /><strong>Cynic</strong></summary>
+					<p>
+						Clear your exhaustion track when you openly and directly ask dangerous questions about
+						an accepted "truth".
+					</p>
+				</details>
+				<details data-pin="nature-defender">
+					<summary><input type="checkbox" /><strong>Defender</strong></summary>
+					<p>
+						Clear your exhaustion track when you put yourself in harm's way to defend someone
+						against injustice or dire threat.
+					</p>
+				</details>
+				<details data-pin="nature-defiant">
+					<summary><input type="checkbox" /><strong>Defiant</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you set out alone to deal with a serious problem
+						without consulting your band.
+					</p>
+				</details>
+				<details data-pin="nature-dissent">
+					<summary><input type="checkbox" /><strong>Dissident</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you publicly align yourself with someone wronged by the
+						powers-that-be.
+					</p>
+				</details>
+				<details data-pin="nature-dove">
+					<summary><input type="checkbox" /><strong>Dove</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you convince a hostile group to give up their fight and
+						disband.
+					</p>
+				</details>
+				<details data-pin="nature-dutiful">
+					<summary><input type="checkbox" /><strong>Dutiful</strong></summary>
+					<p>
+						Clear your exhaustion track when you take on a dangerous or difficult task on behalf of
+						another.
+					</p>
+				</details>
+				<details data-pin="nature-exemplar">
+					<summary><input type="checkbox" /><strong>Exemplar</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you publicly take on a challenging task on behalf of
+						the just and those they represent.
+					</p>
+				</details>
+				<details data-pin="nature-explorer">
+					<summary><input type="checkbox" /><strong>Explorer</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you enter a ruin or other dangerous area of the forest.
+					</p>
+				</details>
+				<details data-pin="nature-extrovert">
+					<summary><input type="checkbox" /><strong>Extrovert</strong></summary>
+					<p>
+						Clear your exhaustion track when you share a moment of real warmth, friendship, or
+						enjoyment with someone.
+					</p>
+				</details>
+				<details data-pin="nature-fool">
+					<summary><input type="checkbox" /><strong>Fool</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you embarrass an authority by publicly stating a truth
+						no one else wants to tell them.
+					</p>
+				</details>
+				<details data-pin="nature-generous">
+					<summary><input type="checkbox" /><strong>Generous</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you provide meaningful quantities of supplies to those
+						in need.
+					</p>
+				</details>
+				<details data-pin="nature-glutton">
+					<summary><input type="checkbox" /><strong>Glutton</strong></summary>
+					<p>
+						Clear your exhaustion track when you overindulge on vices like drink, food, and
+						gambling.
+					</p>
+				</details>
+				<details data-pin="nature-gossip">
+					<summary><input type="checkbox" /><strong>Gossip</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you reveal new and important information to someone who
+						can act on it.
+					</p>
+				</details>
+				<details data-pin="nature-handy">
+					<summary><input type="checkbox" /><strong>Handy</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you agree to help a clearing by repairing a much-needed
+						tool or resource.
+					</p>
+				</details>
+				<details data-pin="nature-healer">
+					<summary><input type="checkbox" /><strong>Healer</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you attempt to start a dialogue between two foes from
+						different factions.
+					</p>
+				</details>
+				<details data-pin="nature-hero">
+					<summary><input type="checkbox" /><strong>Hero</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you outright attack a dangerous, oppressive, or
+						villainous NPC.
+					</p>
+				</details>
+				<details data-pin="nature-historian">
+					<summary><input type="checkbox" /><strong>Historian</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you refuse to allow someone to cover up or obscure the
+						truth.
+					</p>
+				</details>
+				<details data-pin="nature-hustler">
+					<summary><input type="checkbox" /><strong>Hustler</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you try to spring a con on a powerful or dangerous
+						mark.
+					</p>
+				</details>
+				<details data-pin="nature-improviser">
+					<summary><input type="checkbox" /><strong>Improviser</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you attempt to solve a technical problem without
+						appropriate tools or skills.
+					</p>
+				</details>
+				<details data-pin="nature-inspiring">
+					<summary><input type="checkbox" /><strong>Inspiring</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you take action that clears the morale track of an NPC
+						or group of NPCs.
+					</p>
+				</details>
+				<details data-pin="nature-kingpin">
+					<summary><input type="checkbox" /><strong>Kingpin</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion rack when you make a public example of someone threatening your
+						business interests.
+					</p>
+				</details>
+				<details data-pin="nature-kleptomaniac">
+					<summary><input type="checkbox" /><strong>Kleptomaniac</strong></summary>
+					<p>
+						Clear your exhaustion track when you try to selfishly steal something valuable or
+						important.
+					</p>
+				</details>
+				<details data-pin="nature-legend">
+					<summary><input type="checkbox" /><strong>Legend</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you put on a performance in front of a large, attentive
+						audience.
+					</p>
+				</details>
+				<details data-pin="nature-loner">
+					<summary><input type="checkbox" /><strong>Loner</strong></summary>
+					<p>
+						Clear your exhaustion track when you enter a dangerous situation alone, without backup
+						or assistance.
+					</p>
+				</details>
+				<details data-pin="nature-martyr">
+					<summary><input type="checkbox" /><strong>Martyr</strong> <mark>T&O</mark></summary>
+					<p>Clear your exhaustion track when you engage overwhelming odds to protect others.</p>
+				</details>
+				<details data-pin="nature-merchant">
+					<summary><input type="checkbox" /><strong>Merchant</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you carry valuable goods or treasure past danger,
+						difficulty, or blockade.
+					</p>
+				</details>
+				<details data-pin="nature-muckraker">
+					<summary><input type="checkbox" /><strong>Muckraker</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you enter somewhere off-limits to discover
+						incriminating secrets.
+					</p>
+				</details>
+				<details data-pin="nature-observer">
+					<summary><input type="checkbox" /><strong>Observer</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you enter a dangerous situation to try to witness a
+						significant or secret event or meet an important individual.
+					</p>
+				</details>
+				<details data-pin="nature-peacemaker">
+					<summary><input type="checkbox" /><strong>Peacemaker</strong></summary>
+					<p>Clear your exhaustion track when you resolve a dangerous conflict nonviolently.</p>
+				</details>
+				<details data-pin="nature-perfectionist">
+					<summary><input type="checkbox" /><strong>Perfectionist</strong></summary>
+					<p>
+						Clear your exhaustion track when you replace someone else's existing tool or resource
+						with something truly great.
+					</p>
+				</details>
+				<details data-pin="nature-perfectionist-alt">
+					<summary>
+						<input type="checkbox" /><strong>Perfectionist (alt)</strong> <mark>R&E</mark>
+					</summary>
+					<p>
+						Clear your exhaustion track when you disdainfully refuse something (a deal, an item,
+						payment, etc.) because your (unreasonably) demand better.
+					</p>
+				</details>
+				<details data-pin="nature-pilgrim">
+					<summary><input type="checkbox" /><strong>Pilgrim</strong></summary>
+					<p>Clear your exhaustion track when you find an expert in a skill you don't possess.</p>
+				</details>
+				<details data-pin="nature-populist">
+					<summary><input type="checkbox" /><strong>Populist</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you publicly try to rally a group of denizens to take
+						action against injustice.
+					</p>
+				</details>
+				<details data-pin="nature-provider">
+					<summary><input type="checkbox" /><strong>Provider</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you provide comfort, solace, or sustenance to someone
+						otherwise bereft at a cost to yourself or your comrades.
+					</p>
+				</details>
+				<details data-pin="nature-punisher">
+					<summary><input type="checkbox" /><strong>Punisher</strong></summary>
+					<p>
+						Clear your exhaustion track when you tell a powerful ro dangerous villain to their face
+						that you will punish them.
+					</p>
+				</details>
+				<details data-pin="nature-radical">
+					<summary><input type="checkbox" /><strong>Radical</strong></summary>
+					<p>Clear your exhaustion track when you espouse dangerous ideas to the wrong audience.</p>
+				</details>
+				<details data-pin="nature-rebellious">
+					<summary><input type="checkbox" /><strong>Rebellious</strong></summary>
+					<p>
+						Clear your exhaustion track when you grievously insult, defy, or anger figures of
+						authority.
+					</p>
+				</details>
+				<details data-pin="nature-rescuer">
+					<summary><input type="checkbox" /><strong>Rescuer</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you sacrifice an advantage to prioritize saving the
+						lives of the vulnerable.
+					</p>
+				</details>
+				<details data-pin="nature-rogue">
+					<summary><input type="checkbox" /><strong>Rogue</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you attempt to doublecross, triplecross, or betray a
+						powerful or dangerous NPC.
+					</p>
+				</details>
+				<details data-pin="nature-romantic">
+					<summary><input type="checkbox" /><strong>Romantic</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you make yourself vulnerable to someone you hope you
+						can trust.
+					</p>
+				</details>
+				<details data-pin="nature-sage">
+					<summary><input type="checkbox" /><strong>Sage</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you convince an ordinary denizen to give up on a
+						custom, tradition, or role that no longer serves them.
+					</p>
+				</details>
+				<details data-pin="nature-schemer">
+					<summary><input type="checkbox" /><strong>Schemer</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you promise valuable resources to a dangerous Woodland
+						figure to secure their aid.
+					</p>
+				</details>
+				<details data-pin="nature-scion">
+					<summary><input type="checkbox" /><strong>Scion</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you enter danger to attack the enemies or defend the
+						allies of your parents.
+					</p>
+				</details>
+				<details data-pin="nature-scrappy">
+					<summary><input type="checkbox" /><strong>Scrappy</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you take out a dangerous foe without marking depletion
+						or wear.
+					</p>
+				</details>
+				<details data-pin="nature-skeptic">
+					<summary><input type="checkbox" /><strong>Skeptic</strong> <mark>R&E</mark></summary>
+					<p>
+						Clear your exhaustion track when you openly and dangerously question the motives of a
+						powerful character.
+					</p>
+				</details>
+				<details data-pin="nature-survivor">
+					<summary><input type="checkbox" /><strong>Survivor</strong></summary>
+					<p>
+						Clear your exhaustion track when you try to flee or cover allies' flight from a
+						dangerous or overwhelming situation.
+					</p>
+				</details>
+				<details data-pin="nature-sworn">
+					<summary><input type="checkbox" /><strong>Sworn</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you openly commit to resolve a dangerous conflict on
+						behalf of someone vulnerable.
+					</p>
+				</details>
+				<details data-pin="nature-trailblazer">
+					<summary><input type="checkbox" /><strong>Trailblazer</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion track when you depart ona wild and risky new course of action with
+						others.
+					</p>
+				</details>
+				<details data-pin="nature-vain">
+					<summary><input type="checkbox" /><strong>Vain</strong> <mark>T&O</mark></summary>
+					<p>
+						Clear your exhaustion when you make a big show of intervening in a situation that
+						doesn't involve you to help or protect someone.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- drives -->
+			<section>
+				<h2 id="drives">Drives</h2>
+				<details data-pin="drive-ambition">
+					<summary><input type="checkbox" /><strong>Ambition</strong></summary>
+					<p>Advance when you increase your Reputation with any faction.</p>
+				</details>
+				<details data-pin="drive-antimilitarist">
+					<summary>
+						<input type="checkbox" /><strong>Antimilitarist</strong> <mark>T&O</mark>
+					</summary>
+					<p>
+						Advance when you sabotage a non-denizen faction's armies or their ability to wage war.
+					</p>
+				</details>
+				<details data-pin="drive-atonement">
+					<summary><input type="checkbox" /><strong>Atonement</strong> <mark>T&O</mark></summary>
+					<p>
+						Advance when you earn forgiveness from someone you or your allies previously harmed.
+					</p>
+				</details>
+				<details data-pin="drive-chaos">
+					<summary><input type="checkbox" /><strong>Chaos</strong></summary>
+					<p>Advance when you topple a tyrannical or dangerously overbearing figure or order.</p>
+					<p></p>
+				</details>
+				<details data-pin="drive-clean-paws">
+					<summary><input type="checkbox" /><strong>Clean Paws</strong></summary>
+					<p>
+						Advance when you accomplish an illicit, criminal goal while maintaining a believable
+						veneer of innocence.
+					</p>
+				</details>
+				<details data-pin="drive-crime">
+					<summary><input type="checkbox" /><strong>Crime</strong></summary>
+					<p>
+						Advance when you illicitly score a significant prize or pull off an illegal caper
+						against impressive odds.
+					</p>
+				</details>
+				<details data-pin="drive-development">
+					<summary><input type="checkbox" /><strong>Development</strong> <mark>T&O</mark></summary>
+					<p>
+						Advance when you contribute to a lasting development or improvement to an entire
+						clearing.
+					</p>
+				</details>
+				<details data-pin="drive-devotion">
+					<summary><input type="checkbox" /><strong>Devotion</strong> <mark>T&O</mark></summary>
+					<p>
+						You follow an organized or folk religion; name it and describe its beliefs. Advance when
+						you get a non-believer to share in one your beliefs or practices.
+					</p>
+				</details>
+				<details data-pin="drive-discord">
+					<summary><input type="checkbox" /><strong>Discord</strong> <mark>T&O</mark></summary>
+					<p>
+						Advance when your actions create or intensify a serious conflict between two factions.
+					</p>
+				</details>
+				<details data-pin="drive-diplomacy">
+					<summary><input type="checkbox" /><strong>Diplomacy</strong> <mark>R&E</mark></summary>
+					<p>
+						Advance when you aid in forging a treaty, diplomatic venture, or formal agreement
+						between two (or more) conflicting groups.
+					</p>
+				</details>
+				<details data-pin="drive-discovery">
+					<summary><input type="checkbox" /><strong>Discovery</strong></summary>
+					<p>Advance when you encounter a new wonder or ruin in the forests.</p>
+				</details>
+				<details data-pin="drive-dowser">
+					<summary><input type="checkbox" /><strong>Dowser</strong> <mark>R&E</mark></summary>
+					<p>Advance when you help a clearing discover and claim a valuable natural resource.</p>
+				</details>
+				<details data-pin="drive-esprit-de-corps">
+					<summary>
+						<input type="checkbox" /><strong>Esprit de Corps</strong> <mark>T&O</mark>
+					</summary>
+					<p>Advance when you win a battle against enemy soldiers alongside friends and allies.</p>
+				</details>
+				<details data-pin="drive-folk-hero">
+					<summary><input type="checkbox" /><strong>Folk Hero</strong> <mark>T&O</mark></summary>
+					<p>
+						Advance when you perform a significant act of service or heroism on behalf of the
+						denizens.
+					</p>
+				</details>
+				<details data-pin="drive-folklorist">
+					<summary><input type="checkbox" /><strong>Folklorist</strong> <mark>R&E</mark></summary>
+					<p>Advance when you prove a local folktale or legend true or false.</p>
+				</details>
+				<details data-pin="drive-freedom">
+					<summary><input type="checkbox" /><strong>Freedom</strong></summary>
+					<p>Advance when you free a group of denizens from oppression.</p>
+				</details>
+				<details data-pin="drive-glory">
+					<summary><input type="checkbox" /><strong>Glory</strong> <mark>T&O</mark></summary>
+					<p>Advance when you defeat a worthy foe in single combat.</p>
+				</details>
+				<details data-pin="drive-greed">
+					<summary><input type="checkbox" /><strong>Greed</strong></summary>
+					<p>Advance when you secure a serious payday or treasure.</p>
+				</details>
+				<details data-pin="drive-guardian">
+					<summary><input type="checkbox" /><strong>Guardian</strong> <mark>R&E</mark></summary>
+					<p>
+						Advance when you protect a clearing from a large beast by defeating it or chasing it
+						away.
+					</p>
+				</details>
+				<details data-pin="drive-infamy">
+					<summary><input type="checkbox" /><strong>Infamy</strong></summary>
+					<p>Advance when you decrease your Reputation with any faction.</p>
+				</details>
+				<details data-pin="drive-justice">
+					<summary><input type="checkbox" /><strong>Justice</strong></summary>
+					<p>
+						Advance when you achieve justice for someone wronged by a powerful, wealthy, or
+						high-status individual.
+					</p>
+				</details>
+				<details data-pin="drive-loyalty">
+					<summary><input type="checkbox" /><strong>Loyalty</strong></summary>
+					<p>
+						You're loyal to someone; name them. Advance when you obey their order at a great cost to
+						yourself.
+					</p>
+				</details>
+				<details data-pin="drive-mysteries">
+					<summary><input type="checkbox" /><strong>Mysteries</strong> <mark>T&O</mark></summary>
+					<p>
+						Advance when you discover the truth behind strange phenomena or goings-on within a
+						clearing.
+					</p>
+				</details>
+				<details data-pin="drive-principles">
+					<summary><input type="checkbox" /><strong>Principles</strong></summary>
+					<p>
+						Advance when you express or embody your moral principles at great cost to yourself or
+						your allies.
+					</p>
+				</details>
+				<details data-pin="drive-partisan">
+					<summary><input type="checkbox" /><strong>Partisan</strong> <mark>T&O</mark></summary>
+					<p>
+						Name a faction. Advance when you successfully complete a mission given to you by an
+						important member of that faction.
+					</p>
+				</details>
+				<details data-pin="drive-protection">
+					<summary><input type="checkbox" /><strong>Protection</strong></summary>
+					<p>
+						Name your ward. Advance when you protect them from significant danger, or when time
+						passes and your ward is safe.
+					</p>
+				</details>
+				<details data-pin="drive-revenge">
+					<summary><input type="checkbox" /><strong>Revenge</strong></summary>
+					<p>Name your foe. Advance when you cause significant harm to them or their interests.</p>
+				</details>
+				<details data-pin="drive-thrills">
+					<summary><input type="checkbox" /><strong>Thrills</strong></summary>
+					<p>Advance when you escape from certain death or incarceration.</p>
+				</details>
+				<details data-pin="drive-traveler">
+					<summary><input type="checkbox" /><strong>Traveler</strong> <mark>T&O</mark></summary>
+					<p>
+						Advance when you replace a valuable or meaningful item with one that represents the
+						local culture.
+					</p>
+				</details>
+				<details data-pin="drive-wanderlust">
+					<summary><input type="checkbox" /><strong>Wanderlust</strong></summary>
+					<p>Advance when you finish a journey to a clearing.</p>
+				</details>
+				<details data-pin="drive-wanted">
+					<summary><input type="checkbox" /><strong>Wanted</strong> <mark>T&O</mark></summary>
+					<p>
+						You've got a bounty on your head; name your crime(s). Advance when you defeat or evade
+						capture by a serious threat trying to cash in on your bounty.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- connections -->
+			<section>
+				<h2 id="connections">Connections</h2>
+				<details data-pin="connection-battle-sibling">
+					<summary>
+						<input type="checkbox" /><strong>Battle-Sibling</strong> <mark>T&O</mark>
+					</summary>
+					<p>
+						When you fight side-by-side or back-to-back with them, take +1 ongoing to weapon moves
+						as long as you remain within intimate range of each other.
+					</p>
+				</details>
+				<details data-pin="connection-confidant">
+					<summary><input type="checkbox" /><strong>Confidant</strong> <mark>T&O</mark></summary>
+					<p>
+						When they come to you in confidence with a problem, mark exhaustion to suggest a course
+						of action to resolve it; if they do as you to the best of their ability, they clear
+						their exhaustion track.
+					</p>
+				</details>
+				<details data-pin="connection-enabler">
+					<summary><input type="checkbox" /><strong>Enabler</strong> <mark>T&O</mark></summary>
+					<p>
+						When you <em>plead with them</em> to join you in reckless action and they agree, they
+						take +1 ongoing to follow the plan in addition to clearing exhaustion.
+					</p>
+				</details>
+				<details data-pin="connection-ex-convict">
+					<summary><input type="checkbox" /><strong>Ex-Convict</strong> <mark>R&E</mark></summary>
+					<p>
+						When you fill in this connection, you each mark 2-notoriety with one faction. When you
+						<em>read a tense situation</em>, you can always ask "What is most valuable here?" for
+						free, even on a miss. Both you and your connection get a +1 when acting on any of your
+						answers.
+					</p>
+				</details>
+				<details data-pin="connection-family">
+					<summary><input type="checkbox" /><strong>Family</strong></summary>
+					<p>When you help them fulfill their nature, you both clear your exhaustion track.</p>
+				</details>
+				<details data-pin="connection-friend">
+					<summary><input type="checkbox" /><strong>Friend</strong></summary>
+					<p>
+						When you <em>help</em> them, you can mark 2-exhaustion to give +2, instead of
+						1-exhaustion for a +1.
+					</p>
+				</details>
+				<details data-pin="connection-lover">
+					<summary><input type="checkbox" /><strong>Lover</strong> <mark>T&O</mark></summary>
+					<p>
+						Once per session when you share a quiet moment of intimacy, just the two of you, choose
+						one:
+					</p>
+					<ul>
+						<li>offer them affection; if they accept it, they clear 3-exhaustion</li>
+						<li>make them a promise; you take +1 ongoing to keep your word</li>
+					</ul>
+				</details>
+				<details data-pin="connection-loyalist">
+					<summary><input type="checkbox" /><strong>Loyalist</strong> <mark>R&E</mark></summary>
+					<p>
+						When you fill in this connection, you each mark 2-prestige with the faction you once
+						served together. When you ask for a favor from that faction, you may bark 2-exhaustion
+						to take 10+ instead of rolling.
+					</p>
+				</details>
+				<details data-pin="connection-partner">
+					<summary><input type="checkbox" /><strong>Partner</strong></summary>
+					<p>
+						When you fill in this connection, you each mark 2-prestige with the faction you helped,
+						and mark 2-notoriety with the faction you harmed. During play, if you are spotted
+						together, then any prestige and notoriety gains with those factions are doubled for the
+						two of you.
+					</p>
+				</details>
+				<details data-pin="connection-professional">
+					<summary><input type="checkbox" /><strong>Professional</strong></summary>
+					<p>
+						If you share information with them after <em>reading a tense situation</em>, you both
+						benefit from the +1 for acting on the answers. If you help them while they
+						<em>attempt a roguish feat</em>, you gain choices on the help move as if you had marked
+						2-exhaustion when you mark 1-exhaustion.
+					</p>
+				</details>
+				<details data-pin="connection-protege">
+					<summary><input type="checkbox" /><strong>Protégé</strong> <mark>T&O</mark></summary>
+					<p>
+						Once per game session, when you spend time training with them, choose one and hold 1:
+					</p>
+					<ul>
+						<li>
+							learn tricks of the trade; they choose which roguish feat they teach you, and you may
+							spend hold to <em>attempt that roguish feat</em> as if you had it
+						</li>
+						<li>
+							spar with them; they choose which weapon skill they teach you, and you may spend hold
+							to use that weapon skill as if you had it
+						</li>
+						<li>
+							ask them about how they see the world; spend hold to take +1 forward to prove them
+							right or wrong
+						</li>
+					</ul>
+				</details>
+				<details data-pin="connection-protector">
+					<summary><input type="checkbox" /><strong>Protector</strong></summary>
+					<p>
+						When they are in reach, mark exhaustion to take a blow meant for them. If you do, take
+						+1 ongoing to weapon moves for the rest of the scene.
+					</p>
+				</details>
+				<details data-pin="connection-refugee">
+					<summary><input type="checkbox" /><strong>Refugee</strong> <mark>R&E</mark></summary>
+					<p>
+						You and your connection are from a clearing that no longer exists. You both share a
+						common cultural practice; when you mark depletion to practice it publicly, a local
+						denizen&mdash;either another survivor like yourselves or someone sympathetic to your
+						loss&mdash;comes forward to offer you comfort and aid.
+					</p>
+				</details>
+				<details data-pin="connection-rival">
+					<summary><input type="checkbox" /><strong>Rival</strong> <mark>T&O</mark></summary>
+					<p>
+						When you challenge them to take a completely unnecessary and excessive risk to prove
+						themselves, they take +1 forward to accept and meet your provocation; if they decline,
+						they mark exhaustion instead
+					</p>
+				</details>
+				<details data-pin="connection-veteran">
+					<summary><input type="checkbox" /><strong>Veteran</strong> <mark>R&E</mark></summary>
+					<p>
+						When you fight side-by-side or back-to-back with them, both of you have access to the
+						<em>parry</em> weapon move regardless of weapon type, as long as you remain within
+						intimate range of each other. If you choose to inflict morale or exhaustion upon a
+						successful parry, you inflict an additional morale or exhaustion.
+					</p>
+				</details>
+				<details data-pin="connection-watcher">
+					<summary><input type="checkbox" /><strong>Watcher</strong></summary>
+					<p>
+						When you <em>figure them out</em>, you always hold 1, even on a miss. When you
+						<em>plead with them to go along with you</em>, you can let them clear 2-exhaustion
+						instead of 1.
+					</p>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<hr />
+
+			<!-- gm reference -->
+			<section>
+				<h2 id="gm-reference">GM Reference</h2>
+				<details data-pin="gm-ref-moves">
+					<summary><input type="checkbox" /><strong>GM Moves</strong></summary>
+					<ul>
+						<li>Inflict injury, exhaustion, wear, depletion, or morale (as established)</li>
+						<li>Reveal an unwelcome truth</li>
+						<li>Show signs of an approaching threat</li>
+						<li>Capture someone</li>
+						<li>Put someone in a spot</li>
+						<li>Disrupt someone's plans and schemes</li>
+						<li>Make them an offer to get their way</li>
+						<li>Show them what a faction thinks of them</li>
+						<li>Turn their move back on them</li>
+						<li>Activate a downside of their background, reputation, or equipment</li>
+						<li>After every move, "what do you do?"</li>
+					</ul>
+				</details>
+				<details data-pin="gm-ref-baseline-npcs">
+					<summary><input type="checkbox" /><strong>Baseline NPCs</strong></summary>
+					<ul>
+						<li>
+							<em>1 injury, 1 exhaustion, 0 wear, 1 morale, inflicts 1-exhaustion</em>
+							An average denizen without any real equipment or protection. Fights with claw and paw.
+						</li>
+						<li>
+							<em>1 injury, 1 exhaustion, 1 wear, 1 morale, inflicts 1-injury</em>
+							An average clearing guard with no notable training or equipment. Fights with chipped
+							swords.
+						</li>
+						<li>
+							<em>2 injury, 1 exhaustion, 2 wear, 2 morale, inflicts 1-injury</em>
+							Decently trained and equipped guard or soldier, not a conscript. Fights with
+							maintained swords.
+						</li>
+						<li>
+							<em>3 injury, 2 exhaustion, 3 wear, 2 morale, inflicts 2-injury and 1-wear</em>
+							A brute or a bruiser. A real threat to any individual vagabond, and even tough enough
+							to threaten the band. Fights with a giant axe.
+						</li>
+						<li>
+							<em>1 injury, 2 exhaustion, 1 wear, 3 morale, inflicts 1-injury</em>
+							A leader, not a fighter. Someone more likely to be in charge, and not try to fight on
+							their own. Fights with a ceremonial weapon.
+						</li>
+						<li>
+							<em>2 injury, 2 exhaustion, 3 wear, 3 morale, inflicts 1-injury and 1-exhaustion</em>
+							A lieutenant, committed to serving another's cause. Capable and well-trained. Fights
+							with a rapier and dagger combination.
+						</li>
+						<li>
+							<em>5 injury, 5 exhaustion, 2 wear, 4 morale, inflicts 3-injury</em>
+							A bear. Run.
+						</li>
+					</ul>
+				</details>
+				<a href="#top">Back to top</a>
+			</section>
+
+			<!-- TODO equipment tags -->
+			<!-- TODO faction-specific reputation moves -->
+			<!-- TODO playbook moves -->
+			<!-- TODO group/mob reference -->
+			<!-- TODO harm removal reference -->
+			<!-- TODO GM principles -->
+			<!-- TODO masteries -->
+			<!-- TODO species moves -->
+			<!-- TODO species abilities -->
+			<!-- TODO equipment value -->
+		</main>
+
+		<footer class="container">
+			<p>
+				This is a quick-reference for <i>Root: The Roleplaying Game</i>, by Magpie Games. All
+				content is copyrighted by them. For full rules, purchase a copy of the <i>Core Book</i> (and
+				optionally <i>Travelers and Outsiders</i> and <i>Ruins and Expeditions</i>) on
+				<a href="https://magpiegames.com/collections/root">the Magpie Games web store</a> or
+				<a
+					href="https://www.drivethrurpg.com/en/publisher/4353/magpie-games/category/33580/root-the-tabletop-roleplaying-game"
+					>DriveThruRPG</a
+				>.
+			</p>
+		</footer>
+
+		<script type="module">
+			const unparsedPins = localStorage.getItem("root-rpg-ref-pins");
+			/** @type Set<string> */
+			let pins = unparsedPins ? new Set(JSON.parse(unparsedPins)) : new Set();
+			buildPins();
+
+			document.body.addEventListener("input", (e) => {
+				/** @type string | undefined */
+				const pin = e.target.parentElement?.parentElement?.dataset?.pin;
+				if (!pin) return;
+				if (e.target.checked) {
+					pins.add(pin);
+				} else {
+					pins.delete(pin);
+				}
+				localStorage.setItem("root-rpg-ref-pins", JSON.stringify(Array.from(pins)));
+				buildPins();
+			});
+
+			function buildPins() {
+				const section = document.getElementById("pins");
+				section.innerHTML = "";
+
+				let innerHTML = "";
+				for (const el of document.querySelectorAll("[data-pin]")) {
+					if (pins.has(el.dataset.pin)) {
+						innerHTML += el.outerHTML;
+					}
+				}
+				if (innerHTML != "") {
+					innerHTML = `<h2>Pinned</h2>${innerHTML}<a href="#top">Back to top</a><hr />`;
+				}
+				section.innerHTML = innerHTML;
+				section.hidden = innerHTML === "";
+
+				for (const el of document.querySelectorAll("[data-pin] > summary > input")) {
+					const pin = el.parentElement?.parentElement?.dataset?.pin;
+					el.checked = pins.has(pin);
+				}
+			}
+		</script>
+	</body>
+</html>
